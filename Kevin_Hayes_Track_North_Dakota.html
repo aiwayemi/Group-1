@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kevin_Hayes_Track_Florida</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Kevin_Hayes_Track_North_Dakota</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14582,6 +14582,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mp</span>
 </pre></div>
 
      </div>
@@ -14972,7 +14973,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population</span>
@@ -14993,7 +14994,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 
@@ -15117,7 +15118,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">infection</span>
@@ -15138,7 +15139,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -15468,360 +15469,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Limit-data-to-Florida">Limit data to Florida<a class="anchor-link" href="#Limit-data-to-Florida">&#182;</a></h1>
+<h1 id="Limit-data-to-North-Dakota">Limit data to North Dakota<a class="anchor-link" href="#Limit-data-to-North-Dakota">&#182;</a></h1>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">deaths_fl</span> <span class="o">=</span> <span class="n">deaths</span><span class="p">[</span><span class="n">deaths</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"FL"</span><span class="p">]</span>
-<span class="n">deaths_fl</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>countyFIPS</th>
-      <th>County Name</th>
-      <th>State</th>
-      <th>StateFIPS</th>
-      <th>2020-01-22</th>
-      <th>2020-01-23</th>
-      <th>2020-01-24</th>
-      <th>2020-01-25</th>
-      <th>2020-01-26</th>
-      <th>2020-01-27</th>
-      <th>...</th>
-      <th>2023-07-14</th>
-      <th>2023-07-15</th>
-      <th>2023-07-16</th>
-      <th>2023-07-17</th>
-      <th>2023-07-18</th>
-      <th>2023-07-19</th>
-      <th>2023-07-20</th>
-      <th>2023-07-21</th>
-      <th>2023-07-22</th>
-      <th>2023-07-23</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>329</th>
-      <td>0</td>
-      <td>Statewide Unallocated</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-    </tr>
-    <tr>
-      <th>330</th>
-      <td>12001</td>
-      <td>Alachua County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-    </tr>
-    <tr>
-      <th>331</th>
-      <td>12003</td>
-      <td>Baker County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-    </tr>
-    <tr>
-      <th>332</th>
-      <td>12005</td>
-      <td>Bay County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-    </tr>
-    <tr>
-      <th>333</th>
-      <td>12007</td>
-      <td>Bradford County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>392</th>
-      <td>12125</td>
-      <td>Union County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-    </tr>
-    <tr>
-      <th>393</th>
-      <td>12127</td>
-      <td>Volusia County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-    </tr>
-    <tr>
-      <th>394</th>
-      <td>12129</td>
-      <td>Wakulla County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-    </tr>
-    <tr>
-      <th>395</th>
-      <td>12131</td>
-      <td>Walton County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-    </tr>
-    <tr>
-      <th>396</th>
-      <td>12133</td>
-      <td>Washington County</td>
-      <td>FL</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-    </tr>
-  </tbody>
-</table>
-<p>68 rows × 1269 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15830,8 +15481,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_fl</span> <span class="o">=</span>  <span class="n">population</span><span class="p">[</span><span class="n">population</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"FL"</span><span class="p">]</span>
-<span class="n">pop_fl</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">deaths_nd</span> <span class="o">=</span> <span class="n">deaths</span><span class="p">[</span><span class="n">deaths</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"ND"</span><span class="p">]</span>
+<span class="n">deaths_nd</span>
 </pre></div>
 
      </div>
@@ -15875,90 +15526,1326 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <th>countyFIPS</th>
       <th>County Name</th>
       <th>State</th>
-      <th>population</th>
+      <th>StateFIPS</th>
+      <th>2020-01-22</th>
+      <th>2020-01-23</th>
+      <th>2020-01-24</th>
+      <th>2020-01-25</th>
+      <th>2020-01-26</th>
+      <th>2020-01-27</th>
+      <th>...</th>
+      <th>2023-07-14</th>
+      <th>2023-07-15</th>
+      <th>2023-07-16</th>
+      <th>2023-07-17</th>
+      <th>2023-07-18</th>
+      <th>2023-07-19</th>
+      <th>2023-07-20</th>
+      <th>2023-07-21</th>
+      <th>2023-07-22</th>
+      <th>2023-07-23</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>330</th>
+      <th>2024</th>
       <td>0</td>
       <td>Statewide Unallocated</td>
-      <td>FL</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>331</th>
-      <td>12001</td>
-      <td>Alachua County</td>
-      <td>FL</td>
-      <td>269043</td>
-    </tr>
-    <tr>
-      <th>332</th>
-      <td>12003</td>
-      <td>Baker County</td>
-      <td>FL</td>
-      <td>29210</td>
-    </tr>
-    <tr>
-      <th>333</th>
-      <td>12005</td>
-      <td>Bay County</td>
-      <td>FL</td>
-      <td>174705</td>
-    </tr>
-    <tr>
-      <th>334</th>
-      <td>12007</td>
-      <td>Bradford County</td>
-      <td>FL</td>
-      <td>28201</td>
-    </tr>
-    <tr>
-      <th>...</th>
+      <th>2025</th>
+      <td>38001</td>
+      <td>Adams County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>...</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>2026</th>
+      <td>38003</td>
+      <td>Barnes County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>...</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>2027</th>
+      <td>38005</td>
+      <td>Benson County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>...</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2028</th>
+      <td>38007</td>
+      <td>Billings County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>...</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
     <tr>
-      <th>393</th>
-      <td>12125</td>
-      <td>Union County</td>
-      <td>FL</td>
-      <td>15237</td>
+      <th>2029</th>
+      <td>38009</td>
+      <td>Bottineau County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
     </tr>
     <tr>
-      <th>394</th>
-      <td>12127</td>
-      <td>Volusia County</td>
-      <td>FL</td>
-      <td>553284</td>
+      <th>2030</th>
+      <td>38011</td>
+      <td>Bowman County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
     </tr>
     <tr>
-      <th>395</th>
-      <td>12129</td>
-      <td>Wakulla County</td>
-      <td>FL</td>
-      <td>33739</td>
+      <th>2031</th>
+      <td>38013</td>
+      <td>Burke County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
-      <th>396</th>
-      <td>12131</td>
-      <td>Walton County</td>
-      <td>FL</td>
-      <td>74071</td>
+      <th>2032</th>
+      <td>38015</td>
+      <td>Burleigh County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
     </tr>
     <tr>
-      <th>397</th>
-      <td>12133</td>
-      <td>Washington County</td>
-      <td>FL</td>
-      <td>25473</td>
+      <th>2033</th>
+      <td>38017</td>
+      <td>Cass County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>38019</td>
+      <td>Cavalier County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>38021</td>
+      <td>Dickey County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>2036</th>
+      <td>38023</td>
+      <td>Divide County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2037</th>
+      <td>38025</td>
+      <td>Dunn County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2038</th>
+      <td>38027</td>
+      <td>Eddy County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2039</th>
+      <td>38029</td>
+      <td>Emmons County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>2040</th>
+      <td>38031</td>
+      <td>Foster County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2041</th>
+      <td>38033</td>
+      <td>Golden Valley County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2042</th>
+      <td>38035</td>
+      <td>Grand Forks County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <th>2043</th>
+      <td>38037</td>
+      <td>Grant County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2044</th>
+      <td>38039</td>
+      <td>Griggs County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2045</th>
+      <td>38041</td>
+      <td>Hettinger County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>38043</td>
+      <td>Kidder County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>2047</th>
+      <td>38045</td>
+      <td>LaMoure County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2048</th>
+      <td>38047</td>
+      <td>Logan County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2049</th>
+      <td>38049</td>
+      <td>McHenry County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>2050</th>
+      <td>38051</td>
+      <td>McIntosh County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>2051</th>
+      <td>38053</td>
+      <td>McKenzie County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>2052</th>
+      <td>38055</td>
+      <td>McLean County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2053</th>
+      <td>38057</td>
+      <td>Mercer County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>2054</th>
+      <td>38059</td>
+      <td>Morton County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>38061</td>
+      <td>Mountrail County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th>2056</th>
+      <td>38063</td>
+      <td>Nelson County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>2057</th>
+      <td>38065</td>
+      <td>Oliver County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2058</th>
+      <td>38067</td>
+      <td>Pembina County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2059</th>
+      <td>38069</td>
+      <td>Pierce County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>2060</th>
+      <td>38071</td>
+      <td>Ramsey County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>38073</td>
+      <td>Ransom County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>38075</td>
+      <td>Renville County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2063</th>
+      <td>38077</td>
+      <td>Richland County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2064</th>
+      <td>38079</td>
+      <td>Rolette County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>2065</th>
+      <td>38081</td>
+      <td>Sargent County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>2066</th>
+      <td>38083</td>
+      <td>Sheridan County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2067</th>
+      <td>38085</td>
+      <td>Sioux County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>2068</th>
+      <td>38087</td>
+      <td>Slope County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2069</th>
+      <td>38089</td>
+      <td>Stark County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <th>2070</th>
+      <td>38091</td>
+      <td>Steele County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2071</th>
+      <td>38093</td>
+      <td>Stutsman County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <th>2072</th>
+      <td>38095</td>
+      <td>Towner County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2073</th>
+      <td>38097</td>
+      <td>Traill County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>38099</td>
+      <td>Walsh County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>2075</th>
+      <td>38101</td>
+      <td>Ward County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+    </tr>
+    <tr>
+      <th>2076</th>
+      <td>38103</td>
+      <td>Wells County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2077</th>
+      <td>38105</td>
+      <td>Williams County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
     </tr>
   </tbody>
 </table>
-<p>68 rows × 4 columns</p>
+<p>54 rows × 1269 columns</p>
 </div>
 </div>
 
@@ -15976,9 +16863,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infection_fl</span> <span class="o">=</span> <span class="n">infection</span><span class="p">[</span><span class="n">infection</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"FL"</span><span class="p">]</span>
-
-<span class="n">infection_fl</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_nd</span> <span class="o">=</span>  <span class="n">population</span><span class="p">[</span><span class="n">population</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"ND"</span><span class="p">]</span>
+<span class="n">pop_nd</span>
 </pre></div>
 
      </div>
@@ -15997,6 +16883,453 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countyFIPS</th>
+      <th>County Name</th>
+      <th>State</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2026</th>
+      <td>0</td>
+      <td>Statewide Unallocated</td>
+      <td>ND</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2027</th>
+      <td>38001</td>
+      <td>Adams County</td>
+      <td>ND</td>
+      <td>2216</td>
+    </tr>
+    <tr>
+      <th>2028</th>
+      <td>38003</td>
+      <td>Barnes County</td>
+      <td>ND</td>
+      <td>10415</td>
+    </tr>
+    <tr>
+      <th>2029</th>
+      <td>38005</td>
+      <td>Benson County</td>
+      <td>ND</td>
+      <td>6832</td>
+    </tr>
+    <tr>
+      <th>2030</th>
+      <td>38007</td>
+      <td>Billings County</td>
+      <td>ND</td>
+      <td>928</td>
+    </tr>
+    <tr>
+      <th>2031</th>
+      <td>38009</td>
+      <td>Bottineau County</td>
+      <td>ND</td>
+      <td>6282</td>
+    </tr>
+    <tr>
+      <th>2032</th>
+      <td>38011</td>
+      <td>Bowman County</td>
+      <td>ND</td>
+      <td>3024</td>
+    </tr>
+    <tr>
+      <th>2033</th>
+      <td>38013</td>
+      <td>Burke County</td>
+      <td>ND</td>
+      <td>2115</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>38015</td>
+      <td>Burleigh County</td>
+      <td>ND</td>
+      <td>95626</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>38017</td>
+      <td>Cass County</td>
+      <td>ND</td>
+      <td>181923</td>
+    </tr>
+    <tr>
+      <th>2036</th>
+      <td>38019</td>
+      <td>Cavalier County</td>
+      <td>ND</td>
+      <td>3762</td>
+    </tr>
+    <tr>
+      <th>2037</th>
+      <td>38021</td>
+      <td>Dickey County</td>
+      <td>ND</td>
+      <td>4872</td>
+    </tr>
+    <tr>
+      <th>2038</th>
+      <td>38023</td>
+      <td>Divide County</td>
+      <td>ND</td>
+      <td>2264</td>
+    </tr>
+    <tr>
+      <th>2039</th>
+      <td>38025</td>
+      <td>Dunn County</td>
+      <td>ND</td>
+      <td>4424</td>
+    </tr>
+    <tr>
+      <th>2040</th>
+      <td>38027</td>
+      <td>Eddy County</td>
+      <td>ND</td>
+      <td>2287</td>
+    </tr>
+    <tr>
+      <th>2041</th>
+      <td>38029</td>
+      <td>Emmons County</td>
+      <td>ND</td>
+      <td>3241</td>
+    </tr>
+    <tr>
+      <th>2042</th>
+      <td>38031</td>
+      <td>Foster County</td>
+      <td>ND</td>
+      <td>3210</td>
+    </tr>
+    <tr>
+      <th>2043</th>
+      <td>38033</td>
+      <td>Golden Valley County</td>
+      <td>ND</td>
+      <td>1761</td>
+    </tr>
+    <tr>
+      <th>2044</th>
+      <td>38035</td>
+      <td>Grand Forks County</td>
+      <td>ND</td>
+      <td>69451</td>
+    </tr>
+    <tr>
+      <th>2045</th>
+      <td>38037</td>
+      <td>Grant County</td>
+      <td>ND</td>
+      <td>2274</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>38039</td>
+      <td>Griggs County</td>
+      <td>ND</td>
+      <td>2231</td>
+    </tr>
+    <tr>
+      <th>2047</th>
+      <td>38041</td>
+      <td>Hettinger County</td>
+      <td>ND</td>
+      <td>2499</td>
+    </tr>
+    <tr>
+      <th>2048</th>
+      <td>38043</td>
+      <td>Kidder County</td>
+      <td>ND</td>
+      <td>2480</td>
+    </tr>
+    <tr>
+      <th>2049</th>
+      <td>38045</td>
+      <td>LaMoure County</td>
+      <td>ND</td>
+      <td>4046</td>
+    </tr>
+    <tr>
+      <th>2050</th>
+      <td>38047</td>
+      <td>Logan County</td>
+      <td>ND</td>
+      <td>1850</td>
+    </tr>
+    <tr>
+      <th>2051</th>
+      <td>38049</td>
+      <td>McHenry County</td>
+      <td>ND</td>
+      <td>5745</td>
+    </tr>
+    <tr>
+      <th>2052</th>
+      <td>38051</td>
+      <td>McIntosh County</td>
+      <td>ND</td>
+      <td>2497</td>
+    </tr>
+    <tr>
+      <th>2053</th>
+      <td>38053</td>
+      <td>McKenzie County</td>
+      <td>ND</td>
+      <td>15024</td>
+    </tr>
+    <tr>
+      <th>2054</th>
+      <td>38055</td>
+      <td>McLean County</td>
+      <td>ND</td>
+      <td>9450</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>38057</td>
+      <td>Mercer County</td>
+      <td>ND</td>
+      <td>8187</td>
+    </tr>
+    <tr>
+      <th>2056</th>
+      <td>38059</td>
+      <td>Morton County</td>
+      <td>ND</td>
+      <td>31364</td>
+    </tr>
+    <tr>
+      <th>2057</th>
+      <td>38061</td>
+      <td>Mountrail County</td>
+      <td>ND</td>
+      <td>10545</td>
+    </tr>
+    <tr>
+      <th>2058</th>
+      <td>38063</td>
+      <td>Nelson County</td>
+      <td>ND</td>
+      <td>2879</td>
+    </tr>
+    <tr>
+      <th>2059</th>
+      <td>38065</td>
+      <td>Oliver County</td>
+      <td>ND</td>
+      <td>1959</td>
+    </tr>
+    <tr>
+      <th>2060</th>
+      <td>38067</td>
+      <td>Pembina County</td>
+      <td>ND</td>
+      <td>6801</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>38069</td>
+      <td>Pierce County</td>
+      <td>ND</td>
+      <td>3975</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>38071</td>
+      <td>Ramsey County</td>
+      <td>ND</td>
+      <td>11519</td>
+    </tr>
+    <tr>
+      <th>2063</th>
+      <td>38073</td>
+      <td>Ransom County</td>
+      <td>ND</td>
+      <td>5218</td>
+    </tr>
+    <tr>
+      <th>2064</th>
+      <td>38075</td>
+      <td>Renville County</td>
+      <td>ND</td>
+      <td>2327</td>
+    </tr>
+    <tr>
+      <th>2065</th>
+      <td>38077</td>
+      <td>Richland County</td>
+      <td>ND</td>
+      <td>16177</td>
+    </tr>
+    <tr>
+      <th>2066</th>
+      <td>38079</td>
+      <td>Rolette County</td>
+      <td>ND</td>
+      <td>14176</td>
+    </tr>
+    <tr>
+      <th>2067</th>
+      <td>38081</td>
+      <td>Sargent County</td>
+      <td>ND</td>
+      <td>3898</td>
+    </tr>
+    <tr>
+      <th>2068</th>
+      <td>38083</td>
+      <td>Sheridan County</td>
+      <td>ND</td>
+      <td>1315</td>
+    </tr>
+    <tr>
+      <th>2069</th>
+      <td>38085</td>
+      <td>Sioux County</td>
+      <td>ND</td>
+      <td>4230</td>
+    </tr>
+    <tr>
+      <th>2070</th>
+      <td>38087</td>
+      <td>Slope County</td>
+      <td>ND</td>
+      <td>750</td>
+    </tr>
+    <tr>
+      <th>2071</th>
+      <td>38089</td>
+      <td>Stark County</td>
+      <td>ND</td>
+      <td>31489</td>
+    </tr>
+    <tr>
+      <th>2072</th>
+      <td>38091</td>
+      <td>Steele County</td>
+      <td>ND</td>
+      <td>1890</td>
+    </tr>
+    <tr>
+      <th>2073</th>
+      <td>38093</td>
+      <td>Stutsman County</td>
+      <td>ND</td>
+      <td>20704</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>38095</td>
+      <td>Towner County</td>
+      <td>ND</td>
+      <td>2189</td>
+    </tr>
+    <tr>
+      <th>2075</th>
+      <td>38097</td>
+      <td>Traill County</td>
+      <td>ND</td>
+      <td>8036</td>
+    </tr>
+    <tr>
+      <th>2076</th>
+      <td>38099</td>
+      <td>Walsh County</td>
+      <td>ND</td>
+      <td>10641</td>
+    </tr>
+    <tr>
+      <th>2077</th>
+      <td>38101</td>
+      <td>Ward County</td>
+      <td>ND</td>
+      <td>67641</td>
+    </tr>
+    <tr>
+      <th>2078</th>
+      <td>38103</td>
+      <td>Wells County</td>
+      <td>ND</td>
+      <td>3834</td>
+    </tr>
+    <tr>
+      <th>2079</th>
+      <td>38105</td>
+      <td>Williams County</td>
+      <td>ND</td>
+      <td>37589</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infection_nd</span> <span class="o">=</span> <span class="n">infection</span><span class="p">[</span><span class="n">infection</span><span class="p">[</span><span class="s2">"State"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"ND"</span><span class="p">]</span>
+
+<span class="n">infection_nd</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -16044,11 +17377,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   </thead>
   <tbody>
     <tr>
-      <th>329</th>
+      <th>2024</th>
       <td>0</td>
       <td>Statewide Unallocated</td>
-      <td>FL</td>
-      <td>12</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16056,23 +17389,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>330</th>
-      <td>12001</td>
-      <td>Alachua County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2025</th>
+      <td>38001</td>
+      <td>Adams County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16080,23 +17413,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
     </tr>
     <tr>
-      <th>331</th>
-      <td>12003</td>
-      <td>Baker County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2026</th>
+      <td>38003</td>
+      <td>Barnes County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16104,23 +17437,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3801</td>
+      <td>3801</td>
+      <td>3801</td>
     </tr>
     <tr>
-      <th>332</th>
-      <td>12005</td>
-      <td>Bay County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2027</th>
+      <td>38005</td>
+      <td>Benson County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16128,23 +17461,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2316</td>
+      <td>2316</td>
+      <td>2316</td>
     </tr>
     <tr>
-      <th>333</th>
-      <td>12007</td>
-      <td>Bradford County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2028</th>
+      <td>38007</td>
+      <td>Billings County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16152,47 +17485,47 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>171</td>
+      <td>171</td>
+      <td>171</td>
     </tr>
     <tr>
-      <th>...</th>
+      <th>2029</th>
+      <td>38009</td>
+      <td>Bottineau County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1915</td>
+      <td>1915</td>
+      <td>1915</td>
     </tr>
     <tr>
-      <th>392</th>
-      <td>12125</td>
-      <td>Union County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2030</th>
+      <td>38011</td>
+      <td>Bowman County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16200,23 +17533,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>938</td>
+      <td>938</td>
+      <td>938</td>
     </tr>
     <tr>
-      <th>393</th>
-      <td>12127</td>
-      <td>Volusia County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2031</th>
+      <td>38013</td>
+      <td>Burke County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16224,23 +17557,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
     </tr>
     <tr>
-      <th>394</th>
-      <td>12129</td>
-      <td>Wakulla County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2032</th>
+      <td>38015</td>
+      <td>Burleigh County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16248,23 +17581,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41882</td>
+      <td>41882</td>
+      <td>41882</td>
     </tr>
     <tr>
-      <th>395</th>
-      <td>12131</td>
-      <td>Walton County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2033</th>
+      <td>38017</td>
+      <td>Cass County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16272,23 +17605,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72221</td>
+      <td>72221</td>
+      <td>72221</td>
     </tr>
     <tr>
-      <th>396</th>
-      <td>12133</td>
-      <td>Washington County</td>
-      <td>FL</td>
-      <td>12</td>
+      <th>2034</th>
+      <td>38019</td>
+      <td>Cavalier County</td>
+      <td>ND</td>
+      <td>38</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -16296,20 +17629,1052 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1014</td>
+      <td>1014</td>
+      <td>1014</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>38021</td>
+      <td>Dickey County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+    </tr>
+    <tr>
+      <th>2036</th>
+      <td>38023</td>
+      <td>Divide County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+    </tr>
+    <tr>
+      <th>2037</th>
+      <td>38025</td>
+      <td>Dunn County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+    </tr>
+    <tr>
+      <th>2038</th>
+      <td>38027</td>
+      <td>Eddy County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <th>2039</th>
+      <td>38029</td>
+      <td>Emmons County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+    </tr>
+    <tr>
+      <th>2040</th>
+      <td>38031</td>
+      <td>Foster County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1179</td>
+      <td>1179</td>
+      <td>1179</td>
+    </tr>
+    <tr>
+      <th>2041</th>
+      <td>38033</td>
+      <td>Golden Valley County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+    </tr>
+    <tr>
+      <th>2042</th>
+      <td>38035</td>
+      <td>Grand Forks County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27492</td>
+      <td>27492</td>
+      <td>27492</td>
+    </tr>
+    <tr>
+      <th>2043</th>
+      <td>38037</td>
+      <td>Grant County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <th>2044</th>
+      <td>38039</td>
+      <td>Griggs County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>706</td>
+      <td>706</td>
+      <td>706</td>
+    </tr>
+    <tr>
+      <th>2045</th>
+      <td>38041</td>
+      <td>Hettinger County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>38043</td>
+      <td>Kidder County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <th>2047</th>
+      <td>38045</td>
+      <td>LaMoure County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+    </tr>
+    <tr>
+      <th>2048</th>
+      <td>38047</td>
+      <td>Logan County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+    </tr>
+    <tr>
+      <th>2049</th>
+      <td>38049</td>
+      <td>McHenry County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+    </tr>
+    <tr>
+      <th>2050</th>
+      <td>38051</td>
+      <td>McIntosh County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <th>2051</th>
+      <td>38053</td>
+      <td>McKenzie County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3687</td>
+      <td>3687</td>
+      <td>3687</td>
+    </tr>
+    <tr>
+      <th>2052</th>
+      <td>38055</td>
+      <td>McLean County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3236</td>
+      <td>3236</td>
+      <td>3236</td>
+    </tr>
+    <tr>
+      <th>2053</th>
+      <td>38057</td>
+      <td>Mercer County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+    </tr>
+    <tr>
+      <th>2054</th>
+      <td>38059</td>
+      <td>Morton County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13486</td>
+      <td>13486</td>
+      <td>13486</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>38061</td>
+      <td>Mountrail County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3977</td>
+      <td>3977</td>
+      <td>3977</td>
+    </tr>
+    <tr>
+      <th>2056</th>
+      <td>38063</td>
+      <td>Nelson County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>940</td>
+      <td>940</td>
+      <td>940</td>
+    </tr>
+    <tr>
+      <th>2057</th>
+      <td>38065</td>
+      <td>Oliver County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+    </tr>
+    <tr>
+      <th>2058</th>
+      <td>38067</td>
+      <td>Pembina County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2450</td>
+      <td>2450</td>
+      <td>2450</td>
+    </tr>
+    <tr>
+      <th>2059</th>
+      <td>38069</td>
+      <td>Pierce County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+    </tr>
+    <tr>
+      <th>2060</th>
+      <td>38071</td>
+      <td>Ramsey County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4458</td>
+      <td>4458</td>
+      <td>4458</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>38073</td>
+      <td>Ransom County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1970</td>
+      <td>1970</td>
+      <td>1970</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>38075</td>
+      <td>Renville County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+    </tr>
+    <tr>
+      <th>2063</th>
+      <td>38077</td>
+      <td>Richland County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+    </tr>
+    <tr>
+      <th>2064</th>
+      <td>38079</td>
+      <td>Rolette County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+    </tr>
+    <tr>
+      <th>2065</th>
+      <td>38081</td>
+      <td>Sargent County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+    </tr>
+    <tr>
+      <th>2066</th>
+      <td>38083</td>
+      <td>Sheridan County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+    </tr>
+    <tr>
+      <th>2067</th>
+      <td>38085</td>
+      <td>Sioux County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+    </tr>
+    <tr>
+      <th>2068</th>
+      <td>38087</td>
+      <td>Slope County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>2069</th>
+      <td>38089</td>
+      <td>Stark County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14013</td>
+      <td>14013</td>
+      <td>14013</td>
+    </tr>
+    <tr>
+      <th>2070</th>
+      <td>38091</td>
+      <td>Steele County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+    </tr>
+    <tr>
+      <th>2071</th>
+      <td>38093</td>
+      <td>Stutsman County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8464</td>
+      <td>8464</td>
+      <td>8464</td>
+    </tr>
+    <tr>
+      <th>2072</th>
+      <td>38095</td>
+      <td>Towner County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+    </tr>
+    <tr>
+      <th>2073</th>
+      <td>38097</td>
+      <td>Traill County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>38099</td>
+      <td>Walsh County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4197</td>
+      <td>4197</td>
+      <td>4197</td>
+    </tr>
+    <tr>
+      <th>2075</th>
+      <td>38101</td>
+      <td>Ward County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24467</td>
+      <td>24467</td>
+      <td>24467</td>
+    </tr>
+    <tr>
+      <th>2076</th>
+      <td>38103</td>
+      <td>Wells County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+    </tr>
+    <tr>
+      <th>2077</th>
+      <td>38105</td>
+      <td>Williams County</td>
+      <td>ND</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12487</td>
+      <td>12487</td>
+      <td>12487</td>
     </tr>
   </tbody>
 </table>
-<p>68 rows × 1269 columns</p>
+<p>54 rows × 1269 columns</p>
 </div>
 </div>
 
@@ -16336,11 +18701,1255 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infection_nd_week</span> <span class="o">=</span> <span class="n">infection_nd</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span> <span class="p">,</span> <span class="o">-</span><span class="mi">7</span> <span class="p">:</span> <span class="p">]</span>
+<span class="n">infection_nd_week</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2023-07-17</th>
+      <th>2023-07-18</th>
+      <th>2023-07-19</th>
+      <th>2023-07-20</th>
+      <th>2023-07-21</th>
+      <th>2023-07-22</th>
+      <th>2023-07-23</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2024</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2025</th>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+      <td>703</td>
+    </tr>
+    <tr>
+      <th>2026</th>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3799</td>
+      <td>3801</td>
+      <td>3801</td>
+      <td>3801</td>
+    </tr>
+    <tr>
+      <th>2027</th>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2315</td>
+      <td>2316</td>
+      <td>2316</td>
+      <td>2316</td>
+    </tr>
+    <tr>
+      <th>2028</th>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>170</td>
+      <td>171</td>
+      <td>171</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <th>2029</th>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>1915</td>
+      <td>1915</td>
+      <td>1915</td>
+    </tr>
+    <tr>
+      <th>2030</th>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>938</td>
+      <td>938</td>
+      <td>938</td>
+    </tr>
+    <tr>
+      <th>2031</th>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+      <td>498</td>
+    </tr>
+    <tr>
+      <th>2032</th>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41876</td>
+      <td>41882</td>
+      <td>41882</td>
+      <td>41882</td>
+    </tr>
+    <tr>
+      <th>2033</th>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72193</td>
+      <td>72221</td>
+      <td>72221</td>
+      <td>72221</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1013</td>
+      <td>1014</td>
+      <td>1014</td>
+      <td>1014</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+      <td>1856</td>
+    </tr>
+    <tr>
+      <th>2036</th>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+      <td>611</td>
+    </tr>
+    <tr>
+      <th>2037</th>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>1211</td>
+    </tr>
+    <tr>
+      <th>2038</th>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <th>2039</th>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+      <td>844</td>
+    </tr>
+    <tr>
+      <th>2040</th>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1178</td>
+      <td>1179</td>
+      <td>1179</td>
+      <td>1179</td>
+    </tr>
+    <tr>
+      <th>2041</th>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+      <td>518</td>
+    </tr>
+    <tr>
+      <th>2042</th>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27472</td>
+      <td>27492</td>
+      <td>27492</td>
+      <td>27492</td>
+    </tr>
+    <tr>
+      <th>2043</th>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <th>2044</th>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>705</td>
+      <td>706</td>
+      <td>706</td>
+      <td>706</td>
+    </tr>
+    <tr>
+      <th>2045</th>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+      <td>969</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <th>2047</th>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+      <td>1194</td>
+    </tr>
+    <tr>
+      <th>2048</th>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+      <td>564</td>
+    </tr>
+    <tr>
+      <th>2049</th>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+      <td>1607</td>
+    </tr>
+    <tr>
+      <th>2050</th>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <th>2051</th>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3686</td>
+      <td>3687</td>
+      <td>3687</td>
+      <td>3687</td>
+    </tr>
+    <tr>
+      <th>2052</th>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3235</td>
+      <td>3236</td>
+      <td>3236</td>
+      <td>3236</td>
+    </tr>
+    <tr>
+      <th>2053</th>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+      <td>3080</td>
+    </tr>
+    <tr>
+      <th>2054</th>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13485</td>
+      <td>13486</td>
+      <td>13486</td>
+      <td>13486</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3973</td>
+      <td>3977</td>
+      <td>3977</td>
+      <td>3977</td>
+    </tr>
+    <tr>
+      <th>2056</th>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>939</td>
+      <td>940</td>
+      <td>940</td>
+      <td>940</td>
+    </tr>
+    <tr>
+      <th>2057</th>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+      <td>380</td>
+    </tr>
+    <tr>
+      <th>2058</th>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2447</td>
+      <td>2450</td>
+      <td>2450</td>
+      <td>2450</td>
+    </tr>
+    <tr>
+      <th>2059</th>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1261</td>
+    </tr>
+    <tr>
+      <th>2060</th>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4457</td>
+      <td>4458</td>
+      <td>4458</td>
+      <td>4458</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1969</td>
+      <td>1970</td>
+      <td>1970</td>
+      <td>1970</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+      <td>677</td>
+    </tr>
+    <tr>
+      <th>2063</th>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+      <td>4894</td>
+    </tr>
+    <tr>
+      <th>2064</th>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+      <td>8270</td>
+    </tr>
+    <tr>
+      <th>2065</th>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+      <td>1340</td>
+    </tr>
+    <tr>
+      <th>2066</th>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+      <td>348</td>
+    </tr>
+    <tr>
+      <th>2067</th>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+      <td>1710</td>
+    </tr>
+    <tr>
+      <th>2068</th>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>2069</th>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14011</td>
+      <td>14013</td>
+      <td>14013</td>
+      <td>14013</td>
+    </tr>
+    <tr>
+      <th>2070</th>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+      <td>448</td>
+    </tr>
+    <tr>
+      <th>2071</th>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8463</td>
+      <td>8464</td>
+      <td>8464</td>
+      <td>8464</td>
+    </tr>
+    <tr>
+      <th>2072</th>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+      <td>765</td>
+    </tr>
+    <tr>
+      <th>2073</th>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+      <td>2550</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4191</td>
+      <td>4197</td>
+      <td>4197</td>
+      <td>4197</td>
+    </tr>
+    <tr>
+      <th>2075</th>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24464</td>
+      <td>24467</td>
+      <td>24467</td>
+      <td>24467</td>
+    </tr>
+    <tr>
+      <th>2076</th>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+      <td>1231</td>
+    </tr>
+    <tr>
+      <th>2077</th>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12482</td>
+      <td>12487</td>
+      <td>12487</td>
+      <td>12487</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">deaths_nd_week</span> <span class="o">=</span> <span class="n">deaths_nd</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span> <span class="p">,</span> <span class="o">-</span><span class="mi">7</span> <span class="p">:</span> <span class="p">]</span>
+<span class="n">deaths_nd_week</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2023-07-17</th>
+      <th>2023-07-18</th>
+      <th>2023-07-19</th>
+      <th>2023-07-20</th>
+      <th>2023-07-21</th>
+      <th>2023-07-22</th>
+      <th>2023-07-23</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2024</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2025</th>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>2026</th>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>2027</th>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2028</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2029</th>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>2030</th>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>2031</th>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2032</th>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+      <td>303</td>
+    </tr>
+    <tr>
+      <th>2033</th>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>2036</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2037</th>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2038</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2039</th>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>2040</th>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2041</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2042</th>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <th>2043</th>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2044</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2045</th>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>2047</th>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2048</th>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2049</th>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>2050</th>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>2051</th>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>2052</th>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2053</th>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th>2054</th>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th>2056</th>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>2057</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2058</th>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2059</th>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>2060</th>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2063</th>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2064</th>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>2065</th>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>2066</th>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2067</th>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>2068</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2069</th>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <th>2070</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2071</th>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <th>2072</th>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2073</th>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>2075</th>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+      <td>251</td>
+    </tr>
+    <tr>
+      <th>2076</th>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2077</th>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+      <td>68</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Sum-data">Sum data<a class="anchor-link" href="#Sum-data">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Total-deaths">Total deaths<a class="anchor-link" href="#Total-deaths">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infection_fl_week</span> <span class="o">=</span> <span class="n">infection_fl</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span> <span class="p">,</span> <span class="o">-</span><span class="mi">7</span> <span class="p">:</span> <span class="p">]</span>
-<span class="n">infection_fl_week</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nd_total_deaths</span> <span class="o">=</span> <span class="n">deaths_nd_week</span><span class="p">[:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">nd_total_deaths</span>
 </pre></div>
 
      </div>
@@ -16362,149 +19971,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>2023-07-17</th>
-      <th>2023-07-18</th>
-      <th>2023-07-19</th>
-      <th>2023-07-20</th>
-      <th>2023-07-21</th>
-      <th>2023-07-22</th>
-      <th>2023-07-23</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>329</th>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-      <td>20363</td>
-    </tr>
-    <tr>
-      <th>330</th>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-      <td>90634</td>
-    </tr>
-    <tr>
-      <th>331</th>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-      <td>10787</td>
-    </tr>
-    <tr>
-      <th>332</th>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-      <td>55836</td>
-    </tr>
-    <tr>
-      <th>333</th>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-      <td>9324</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>392</th>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-      <td>5140</td>
-    </tr>
-    <tr>
-      <th>393</th>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-      <td>152326</td>
-    </tr>
-    <tr>
-      <th>394</th>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-      <td>12314</td>
-    </tr>
-    <tr>
-      <th>395</th>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-      <td>19888</td>
-    </tr>
-    <tr>
-      <th>396</th>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-      <td>7731</td>
-    </tr>
-  </tbody>
-</table>
-<p>68 rows × 7 columns</p>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2023-07-17    2232
+2023-07-18    2232
+2023-07-19    2232
+2023-07-20    2232
+2023-07-21    2232
+2023-07-22    2232
+2023-07-23    2232
+dtype: int64</pre>
 </div>
 
 </div>
@@ -16513,6 +19989,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Plot-deaths">Plot deaths<a class="anchor-link" href="#Plot-deaths">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16521,8 +20008,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">deaths_fl_week</span> <span class="o">=</span> <span class="n">deaths_fl</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span> <span class="p">,</span> <span class="o">-</span><span class="mi">7</span> <span class="p">:</span> <span class="p">]</span>
-<span class="n">deaths_fl_week</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nd_total_deaths</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s2">"Date"</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s2">"Deaths"</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -16544,149 +20030,26 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>2023-07-17</th>
-      <th>2023-07-18</th>
-      <th>2023-07-19</th>
-      <th>2023-07-20</th>
-      <th>2023-07-21</th>
-      <th>2023-07-22</th>
-      <th>2023-07-23</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>329</th>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-      <td>52102</td>
-    </tr>
-    <tr>
-      <th>330</th>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-      <td>285</td>
-    </tr>
-    <tr>
-      <th>331</th>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-      <td>62</td>
-    </tr>
-    <tr>
-      <th>332</th>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-      <td>394</td>
-    </tr>
-    <tr>
-      <th>333</th>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>392</th>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-      <td>74</td>
-    </tr>
-    <tr>
-      <th>393</th>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-      <td>846</td>
-    </tr>
-    <tr>
-      <th>394</th>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-      <td>56</td>
-    </tr>
-    <tr>
-      <th>395</th>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-      <td>89</td>
-    </tr>
-    <tr>
-      <th>396</th>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-    </tr>
-  </tbody>
-</table>
-<p>68 rows × 7 columns</p>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;Axes: xlabel=&#39;Date&#39;, ylabel=&#39;Deaths&#39;&gt;</pre>
 </div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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QFvRrABWVFSk2267TZL08ccfKyYmRhs3btSKFSu0fPnylqwPAAAAANqMZgWw6upq93dkrVmzRomJiZKkfv36qbS0tOWqAwAAAIA2pFkBLDo6Wm+++abWr1+v7OxsJSQkSJJKSkoa9T1dAAAAAHA1alYAe+mll7RkyRKNHDlSDz74oAYOHChJyszMdH80EQAAAADgqdnb0J87d06VlZXq0qWL+1hxcbE6duyo0NDQFiuwtWAbegAAAADSpWWDds29qI+Pj0f4kqQePXo0dzoAAAAAaPOa9RHEw4cPKykpSZGRkWrXrp18fHw8XgAAAACAupp1Byw5OVkHDhzQc889p4iICDkcjpauCwAAAADanGYFsA0bNmj9+vW66aabWrgcAAAAAGi7mvURxKioKDVz7w4AAAAAuGo1K4C99tprmjt3roqLi1u4HAAAAABouxr9EcQuXbp4POt16tQp3XDDDerYsaPat2/vMfbYsWMtVyEAAAAAtBGNDmCvvfbaZSwDAAAAANq+RgewRx555HLWAQAAAABtXrOeAfPx8dGRI0fqHD969CjfAwYAAAAADWhWAGtoB8Sqqir5+vpeUkEAAAAA0FY16XvAXn/9dUmSw+HQX//6V3Xq1Ml97ty5c1q3bp369evXshUCAAAAQBvRpAD26quvSvrpDtibb77p8XFDX19f9ejRQ2+++WbLVggPxhidrj7n7TIAAAAAr/Bv7+OxO/uVpkkBbN++fZKkUaNGKSMjQ126dLksRaFhp6vPqf//+09vlwEAAAB4xXcvjFFH3ybFmFalWZXn5ua2dB0AAAAA0OY1OzoeOnRImZmZOnDggM6ePetxbuHChZdcGOrn395H370wxttlAAAAAF7h3/7K3nW9WQHsiy++UGJionr27Kldu3YpJiZGxcXFMsYoNja2pWvEzzgcjiv6lisAAABwNWvWNvSpqamaPXu2ioqK1KFDB33yySc6ePCgRowYofvvv7+lawQAAACANqFZAWzHjh165JFHJEnt2rXT6dOn1alTJ73wwgt66aWXWrRAAAAAAGgrmhXAAgICVFVVJUmKjIzU3r173ed++OGHlqkMAAAAANqYZj1MNGTIEH311Vfq37+/xo0bp9mzZ6uwsFAZGRkaMmRIS9cIAAAAAG1CswLYwoULdfLkSUnS/PnzdfLkSX300Ufq1auX+8uaAQAAAACeHMYY4+0irgSVlZVyOp1yuVwKCgrydjkAAAAAvORSskGzngGTpIqKCv31r39Vamqqjh07Jknatm2bvv/+++ZOCQAAAABtWrM+glhQUKDRo0fL6XSquLhYU6dOVXBwsFauXKn9+/frvffea+k6AQAAAOCK16w7YLNmzVJycrL27NmjDh06uI+PHTtW69ata7HiAAAAAKAtaVYA+/rrr/W73/2uzvHrrrtOZWVll1wUAAAAALRFzQpgHTp0UGVlZZ3ju3bt0rXXXnvJRQEAAABAW9SsAPab3/xGL7zwgqqrqyVJDodDBw4c0Ny5c3Xfffe1aIEAAAAA0FY0K4C9/PLLKi8vV2hoqE6fPq0RI0aoV69eCgwM1IsvvtjSNQIAAABAm9CsXRCDgoK0YcMG5ebmauvWraqtrVVsbKxGjx7d0vUBAAAAQJvR5ABWW1ur5cuXKyMjQ8XFxXI4HOrZs6fCw8NljJHD4bgcdQIAAADAFa9JH0E0xigxMVGPP/64vv/+ew0YMEDR0dHav3+/kpOT9dvf/vZy1QkAAAAAV7wm3QFbvny51q1bpy+++EKjRo3yOJeTk6MJEybovffe05QpU1q0SAAAAABoC5p0B+yDDz7Qs88+Wyd8SdKdd96puXPnKj09vcWKAwAAAIC2pEkBrKCgQAkJCQ2eHzt2rL755ptLLgoAAAAA2qImBbBjx44pLCyswfNhYWE6fvz4JRcFAAAAAG1RkwLYuXPn1K5dw4+N+fj4qKam5pKLAgAAAIC2qEmbcBhjlJycLD8/v3rPV1VVtUhRAAAAANAWNSmAPfLIIxcdww6IAAAAAFC/JgWwZcuWXa46AAAAAKDNa9IzYAAAAACA5iOAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwxKsBLC0tTYMGDVJgYKBCQ0M1YcIE7dq1y32+urpazzzzjAYMGKCAgABFRkZqypQpKikp8ZinqqpKM2bMUEhIiAICApSYmKhDhw55jDl+/LiSkpLkdDrldDqVlJSkiooKG8sEAAAAAEleDmBr167V9OnTlZeXp+zsbNXU1Cg+Pl6nTp2SJP3444/atm2bnnvuOW3btk0ZGRnavXu3EhMTPeZ5+umntXLlSn344YfasGGDTp48qfHjx+vcuXPuMZMnT1Z+fr6ysrKUlZWl/Px8JSUlWV0vAAAAgKubwxhjvF3EeeXl5QoNDdXatWs1fPjwesd8/fXXuu2227R//351795dLpdL1157rd5//3098MADkqSSkhJFRUXps88+05gxY7Rjxw71799feXl5Gjx4sCQpLy9PcXFx2rlzp/r27XvR2iorK+V0OuVyuRQUFNRyiwYAAABwRbmUbNCqngFzuVySpODg4AuOcTgc6ty5syRp69atqq6uVnx8vHtMZGSkYmJitHHjRknSpk2b5HQ63eFLkoYMGSKn0+ke80tVVVWqrKz0eAEAAADApWg1AcwYo1mzZmnYsGGKiYmpd8yZM2c0d+5cTZ482Z00y8rK5Ovrqy5duniMDQsLU1lZmXtMaGhonflCQ0PdY34pLS3N/byY0+lUVFTUpSwPAAAAAFpPAEtJSVFBQYE++OCDes9XV1dr0qRJqq2t1eLFiy86nzFGDofD/fPP/9zQmJ9LTU2Vy+Vyvw4ePNjIlQAAAABA/dp5uwBJmjFjhjIzM7Vu3Tp169atzvnq6mpNnDhR+/btU05OjsfnLMPDw3X27FkdP37c4y7YkSNHNHToUPeYw4cP15m3vLxcYWFh9dbk5+cnPz+/S10aAAAAALh59Q6YMUYpKSnKyMhQTk6OevbsWWfM+fC1Z88erVmzRl27dvU4f8stt6h9+/bKzs52HystLVVRUZE7gMXFxcnlcmnLli3uMZs3b5bL5XKPAQAAAIDLzau7ID711FNasWKFVq1a5bETodPplL+/v2pqanTfffdp27ZtWr16tcfdquDgYPn6+kqSnnzySa1evVrLly9XcHCw5syZo6NHj2rr1q3y8fGRJI0dO1YlJSVasmSJJGnatGm6/vrr9be//a1RtbILIgAAAADp0rKBVwNYQ89fLVu2TMnJySouLq73rpgk5ebmauTIkZJ+2pzj97//vVasWKHTp0/rrrvu0uLFiz02zjh27JhmzpypzMxMSVJiYqIWLVrk3k3xYghgAAAAAKQrOIBdSQhgAAAAAKQ29D1gAAAAANCWEcAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAAGAAAAAJYQwAAAAADAEgIYAAAAAFhCAAMAAAAASwhgAAAAAGAJAQwAAAAALCGAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAAGAAAAAJYQwAAAAADAEgIYAAAAAFhCAAMAAAAASwhgAAAAAGAJAQwAAAAALCGAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAAGAAAAAJYQwAAAAADAEgIYAAAAAFhCAAMAAAAAS7wawNLS0jRo0CAFBgYqNDRUEyZM0K5duzzGZGRkaMyYMQoJCZHD4VB+fn6deUaOHCmHw+HxmjRpkseY48ePKykpSU6nU06nU0lJSaqoqLiMqwMAAAAAT14NYGvXrtX06dOVl5en7Oxs1dTUKD4+XqdOnXKPOXXqlG6//XYtWLDggnNNnTpVpaWl7teSJUs8zk+ePFn5+fnKyspSVlaW8vPzlZSUdFnWBQAAAAD1aefNi2dlZXn8vGzZMoWGhmrr1q0aPny4JLlDUnFx8QXn6tixo8LDw+s9t2PHDmVlZSkvL0+DBw+WJL399tuKi4vTrl271Ldv30tcCQAAAABcXKt6BszlckmSgoODm/ze9PR0hYSEKDo6WnPmzNGJEyfc5zZt2iSn0+kOX5I0ZMgQOZ1Obdy4sd75qqqqVFlZ6fECAAAAgEvh1TtgP2eM0axZszRs2DDFxMQ06b0PPfSQevbsqfDwcBUVFSk1NVXffPONsrOzJUllZWUKDQ2t877Q0FCVlZXVO2daWpqef/75pi8EAAAAABrQagJYSkqKCgoKtGHDhia/d+rUqe4/x8TEqHfv3rr11lu1bds2xcbGSpIcDked9xlj6j0uSampqZo1a5b758rKSkVFRTW5NgAAAAA4r1UEsBkzZigzM1Pr1q1Tt27dLnm+2NhYtW/fXnv27FFsbKzCw8N1+PDhOuPKy8sVFhZW7xx+fn7y8/O75FoAAAAA4DyvPgNmjFFKSooyMjKUk5Ojnj17tsi83377raqrqxURESFJiouLk8vl0pYtW9xjNm/eLJfLpaFDh7bINQEAAADgYrx6B2z69OlasWKFVq1apcDAQPfzWE6nU/7+/pKkY8eO6cCBAyopKZEk9/eEhYeHKzw8XHv37lV6erruuecehYSE6LvvvtPs2bN188036/bbb5ck3XjjjUpISNDUqVPd29NPmzZN48ePZwdEAAAAANY4jDHGaxdv4PmrZcuWKTk5WZK0fPlyPfroo3XGzJs3T/Pnz9fBgwf18MMPq6ioSCdPnlRUVJTGjRunefPmeeymeOzYMc2cOVOZmZmSpMTERC1atEidO3duVK2VlZVyOp1yuVwKCgpq2kIBAAAAtBmXkg28GsCuJAQwAAAAANKlZYNW9T1gAAAAANCWEcAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAAGAAAAAJYQwAAAAADAEgIYAAAAAFhCAAMAAAAASwhgAAAAAGAJAQwAAAAALCGAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWEIAAwAAAABLCGAAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAAGAAAAAJYQwAAAAADAEgIYAAAAAFhCAAMAAAAASwhgAAAAAGAJAQwAAAAALCGAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCknbcLuFIYYyRJlZWVXq4EAAAAgDedzwTnM0JTEMAa6cSJE5KkqKgoL1cCAAAAoDU4ceKEnE5nk97jMM2JbVeh2tpalZSUKDAwUA6Hw6u1VFZWKioqSgcPHlRQUJBXa0HLoKdtE31te+hp20Rf2x562ja1pr4aY3TixAlFRkbqmmua9lQXd8Aa6ZprrlG3bt28XYaHoKAgr//Dh5ZFT9sm+tr20NO2ib62PfS0bWotfW3qna/z2IQDAAAAACwhgAEAAACAJQSwK5Cfn5/mzZsnPz8/b5eCFkJP2yb62vbQ07aJvrY99LRtait9ZRMOAAAAALCEO2AAAAAAYAkBDAAAAAAsIYABAAAAgCUEMAAAAACwhAB2AWlpaRo0aJACAwMVGhqqCRMmaNeuXR5jjDGaP3++IiMj5e/vr5EjR+rbb791nz927JhmzJihvn37qmPHjurevbtmzpwpl8vlMU9iYqK6d++uDh06KCIiQklJSSopKblojYWFhRoxYoT8/f113XXX6YUXXtDP91VJTk6Ww+Go84qOjr7gvOvWrdOvf/1rRUZGyuFw6NNPP60zpr55HQ6H/u3f/u2idXsLPb1wT0+ePKmUlBR169ZN/v7+uvHGG/XGG29ctGZvoqcX7unhw4eVnJysyMhIdezYUQkJCdqzZ89Fa/a2q7mvLbH21oieXnjtGRkZGjNmjEJCQuRwOJSfn3/RelsD+trw2qurq/XMM89owIABCggIUGRkpKZMmdKomr2Jnl547fPnz1e/fv0UEBCgLl26aPTo0dq8efNFa/Zg0KAxY8aYZcuWmaKiIpOfn2/GjRtnunfvbk6ePOkes2DBAhMYGGg++eQTU1hYaB544AETERFhKisrjTHGFBYWmnvvvddkZmaaf/zjH+aLL74wvXv3Nvfdd5/HtRYuXGg2bdpkiouLzVdffWXi4uJMXFzcBetzuVwmLCzMTJo0yRQWFppPPvnEBAYGmpdfftk9pqKiwpSWlrpfBw8eNMHBwWbevHkXnPuzzz4z//Iv/2I++eQTI8msXLmyzpifz1taWmreeecd43A4zN69ey/ym/Ueenrhnj7++OPmhhtuMLm5uWbfvn1myZIlxsfHx3z66acX+c16Dz1tuKe1tbVmyJAh5o477jBbtmwxO3fuNNOmTavz+2mNrua+tsTaWyN6euG1v/fee+b55583b7/9tpFktm/f3sjfrHfR14bXXlFRYUaPHm0++ugjs3PnTrNp0yYzePBgc8sttzTlV2wdPb3w2tPT0012drbZu3evKSoqMo899pgJCgoyR44caeyv2BDAmuDIkSNGklm7dq0x5qf/uAkPDzcLFixwjzlz5oxxOp3mzTffbHCejz/+2Pj6+prq6uoGx6xatco4HA5z9uzZBscsXrzYOJ1Oc+bMGfextLQ0ExkZaWpra+t9z8qVK43D4TDFxcUNzvtLDf3H+i/95je/MXfeeWej520N6Kmn6Oho88ILL3gci42NNX/84x8bPbe30dP/s2vXLiPJFBUVuY/V1NSY4OBg8/bbbzd67tbgau2rMS239taGnv7f2n9u3759V1QA+yX6Wn9fz9uyZYuRZPbv39+kub2Jnl64py6Xy0gya9asafS8fASxCc7fNg0ODpYk7du3T2VlZYqPj3eP8fPz04gRI7Rx48YLzhMUFKR27drVe/7YsWNKT0/X0KFD1b59+wbn2bRpk0aMGOHxZXRjxoxRSUmJiouL633P0qVLNXr0aF1//fUNztschw8f1t///nc99thjLTrv5UZPPQ0bNkyZmZn6/vvvZYxRbm6udu/erTFjxlzy3LbQ0/9TVVUlSerQoYP7mI+Pj3x9fbVhw4ZLmtu2q7mvLbX21oae/t/a2xL6euG+ulwuORwOde7cuUlzexM9bbinZ8+e1VtvvSWn06mBAwc2el4CWCMZYzRr1iwNGzZMMTExkqSysjJJUlhYmMfYsLAw97lfOnr0qP70pz/pd7/7XZ1zzzzzjAICAtS1a1cdOHBAq1atumBNZWVl9V7757X9XGlpqT7//HM9/vjjF5y3Od59910FBgbq3nvvbfG5Lxd6Wtfrr7+u/v37q1u3bvL19VVCQoIWL16sYcOGtcj8lxs99dSvXz9df/31Sk1N1fHjx3X27FktWLBAZWVlKi0tveT5bbma+9pSa29t6Knn2tsK+nrhvp45c0Zz587V5MmTFRQU1KT5vYWe1t/T1atXq1OnTurQoYNeffVVZWdnKyQkpNFzE8AaKSUlRQUFBfrggw/qnHM4HB4/G2PqHJOkyspKjRs3Tv3799e8efPqnP/973+v7du367/+67/k4+OjKVOmuB8ojI6OVqdOndSpUyeNHTv2gteu77gkLV++XJ07d9aECRPcx9avX++et1OnTkpPT7/Ab6Fh77zzjh566CGP/9Pe2tHTul5//XXl5eUpMzNTW7du1SuvvKKnnnpKa9asafQc3kRPPbVv316ffPKJdu/ereDgYHXs2FFffvmlxo4dKx8fn0bN0RpczX1tibW3RvS0/rVf6ehrw32trq7WpEmTVFtbq8WLF9c7pjWip/WvfdSoUcrPz9fGjRuVkJCgiRMn6siRI3XGNaT+e4DwMGPGDGVmZmrdunXq1q2b+3h4eLikn9J2RESE+/iRI0fqJPMTJ04oISFBnTp10sqVK+u9tRoSEqKQkBD16dNHN954o6KiopSXl6e4uDh99tlnqq6uliT5+/u7r//LpH+++b+8vjFG77zzjpKSkuTr6+s+fuutt3rstPTL9zXG+vXrtWvXLn300UdNfq+30NO6Tp8+rWeffVYrV67UuHHjJEm/+tWvlJ+fr5dfflmjR49u1DzeQk/rd8sttyg/P18ul0tnz57Vtddeq8GDB+vWW29t9BzedDX3tSXW3hrR07prbwvoa8N9ra6u1sSJE7Vv3z7l5ORcMXe/6GnDPQ0ICFCvXr3Uq1cvDRkyRL1799bSpUuVmppaZ2y9Gv202FWotrbWTJ8+3URGRprdu3fXez48PNy89NJL7mNVVVV1HkJ0uVxmyJAhZsSIEebUqVONuvaBAweMJJObm9vgmMWLF5vOnTubqqoq97EFCxbU+xBibm6ukWQKCwsbdf2f00U24XjkkUda/Y4+59HTn9TX0/MPkX722Wcex6dNm2buvvvuJl/DFnr6k4v9PT1v9+7d5pprrjH/+Z//2eRr2HQ197Wl1t7a0NOG1/5zV9omHPT1wn09e/asmTBhgomOjm7SLnneRE8b93f152644YaL7rD4cwSwC3jyySeN0+k0X375pcdWlj/++KN7zIIFC4zT6TQZGRmmsLDQPPjggx7bcFZWVprBgwebAQMGmH/84x8e89TU1BhjjNm8ebP5y1/+YrZv326Ki4tNTk6OGTZsmLnhhhs8dnj5pYqKChMWFmYefPBBU1hYaDIyMkxQUJDHNpznPfzww2bw4MGNXvuJEyfM9u3bzfbt240ks3DhQrN9+/Y6u/a4XC7TsWNH88YbbzR6bm+ipxfu6YgRI0x0dLTJzc01//M//2OWLVtmOnToYBYvXtzo69hGTy/c048//tjk5uaavXv3mk8//dRcf/315t577230Nbzlau5rS6y9NaKnF1770aNHzfbt283f//53I8l8+OGHZvv27aa0tLTR1/EG+trw2qurq01iYqLp1q2byc/P9xjz8/DQ2tDThtd+8uRJk5qa6t46f+vWreaxxx4zfn5+HjsOXwwB7AIk1ftatmyZe0xtba2ZN2+eCQ8PN35+fmb48OEeKft88q7vtW/fPmOMMQUFBWbUqFEmODjY+Pn5mR49epgnnnjCHDp06KI1FhQUmDvuuMP4+fmZ8PBwM3/+/Drpv6Kiwvj7+5u33nqr0WtvqO5HHnnEY9ySJUuMv7+/qaioaPTc3kRPL9zT0tJSk5ycbCIjI02HDh1M3759zSuvvNLgtq6tAT29cE///d//3XTr1s20b9/edO/e3fzxj39s1f/iP+9q7mtLrL01oqcXXvuyZcvqHdOU/6vuDfS14bWfv5tZ3+tCd3i8jZ42vPbTp0+b3/72tyYyMtL4+vqaiIgIk5iYaLZs2dLoaxhjjON/LwYAAAAAuMzYBREAAAAALCGAAQAAAIAlBDAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAHDVSU5OlsPhkMPhUPv27RUWFqa7775b77zzjmpraxs9z/Lly9W5c+fLVygAoM0hgAEArkoJCQkqLS1VcXGxPv/8c40aNUr/9E//pPHjx6umpsbb5QEA2igCGADgquTn56fw8HBdd911io2N1bPPPqtVq1bp888/1/LlyyVJCxcu1IABAxQQEKCoqCg99dRTOnnypCTpyy+/1KOPPiqXy+W+mzZ//nxJ0tmzZ/WHP/xB1113nQICAjR48GB9+eWX3lkoAKBVIYABAPC/7rzzTg0cOFAZGRmSpGuuuUavv/66ioqK9O677yonJ0d/+MMfJElDhw7Va6+9pqCgIJWWlqq0tFRz5syRJD366KP66quv9OGHH6qgoED333+/EhIStGfPHq+tDQDQOjiMMcbbRQAAYFNycrIqKir06aef1jk3adIkFRQU6Lvvvqtz7j/+4z/05JNP6ocffpD00zNgTz/9tCoqKtxj9u7dq969e+vQoUOKjIx0Hx89erRuu+02/fnPf27x9QAArhztvF0AAACtiTFGDodDkpSbm6s///nP+u6771RZWamamhqdOXNGp06dUkBAQL3v37Ztm4wx6tOnj8fxqqoqde3a9bLXDwBo3QhgAAD8zI4dO9SzZ0/t379f99xzj5544gn96U9/UnBwsDZs2KDHHntM1dXVDb6/trZWPj4+2rp1q3x8fDzOderU6XKXDwBo5QhgAAD8r5ycHBUWFuqf//mf9d///d+qqanRK6+8omuu+emR6Y8//thjvK+vr86dO+dx7Oabb9a5c+d05MgR3XHHHdZqBwBcGQhgAICrUlVVlcrKynTu3DkdPnxYWVlZSktL0/jx4zVlyhQVFhaqpqZGf/nLX/TrX/9aX331ld58802POXr06KGTJ0/qiy++0MCBA9WxY0f16dNHDz30kKZMmaJXXnlFN998s3744Qfl5ORowIABuueee7y0YgBAa8AuiACAq1JWVpYiIiLUo0cPJSQkKDc3V6+//rpWrVolHx8f3XTTTVq4cKFeeuklxcTEKD09XWlpaR5zDB06VE888YQeeOABXXvttfrXf/1XSdKyZcs0ZcoUzZ49W3379lViYqI2b96sqKgobywVANCKsAsiAAAAAFjCHTAAAAAAsIQABgAAAACWEMAAAAAAwBICGAAAAABYQgADAAAAAEsIYAAAAABgCQEMAAAAACwhgAEAAACAJQQwAAAAALCEAAYAAAAAlhDAAAAAAMASAhgAAAAAWPL/AR4AX+EPo9qVAAAAAElFTkSuQmCC"
+class="
+"
+>
 </div>
 
 </div>
@@ -16702,7 +20065,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Sum-data">Sum data<a class="anchor-link" href="#Sum-data">&#182;</a></h1>
+<h2 id="North-Dakotas'-deaths-are-the-same-each-day.-This-indicates-that-the-number-of-deaths-are-steady.">North Dakotas' deaths are the same each day. This indicates that the number of deaths are steady.<a class="anchor-link" href="#North-Dakotas'-deaths-are-the-same-each-day.-This-indicates-that-the-number-of-deaths-are-steady.">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Total-Infections">Total Infections<a class="anchor-link" href="#Total-Infections">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16711,11 +20085,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fl_total_deaths</span> <span class="o">=</span> <span class="n">deaths_fl_week</span><span class="p">[:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">fl_total_deaths</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nd_total_infections</span> <span class="o">=</span> <span class="n">infection_nd_week</span><span class="p">[:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">nd_total_infections</span>
 </pre></div>
 
      </div>
@@ -16733,19 +20107,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2023-07-17    89075
-2023-07-18    89075
-2023-07-19    89075
-2023-07-20    89075
-2023-07-21    89075
-2023-07-22    89075
-2023-07-23    89075
+<pre>2023-07-17    291974
+2023-07-18    291974
+2023-07-19    291974
+2023-07-20    291974
+2023-07-21    292065
+2023-07-22    292065
+2023-07-23    292065
 dtype: int64</pre>
 </div>
 
@@ -16762,7 +20136,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Floridas-deaths-are-the-same-each-day.-This-indicates-that-they-are-not-updating-the-data-rather-than-the-deaths-being-steady.">Floridas deaths are the same each day. This indicates that they are not updating the data rather than the deaths being steady.<a class="anchor-link" href="#Floridas-deaths-are-the-same-each-day.-This-indicates-that-they-are-not-updating-the-data-rather-than-the-deaths-being-steady.">&#182;</a></h2>
+<h3 id="Plot-infections">Plot infections<a class="anchor-link" href="#Plot-infections">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -16771,11 +20145,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fl_total_infections</span> <span class="o">=</span> <span class="n">infection_fl_week</span><span class="p">[:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">fl_total_infections</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nd_total_infections</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s2">"Date"</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s2">"Infections"</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">use_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16793,20 +20166,30 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2023-07-17    7627999
-2023-07-18    7627999
-2023-07-19    7627999
-2023-07-20    7627999
-2023-07-21    7627999
-2023-07-22    7627999
-2023-07-23    7627999
-dtype: int64</pre>
+<pre>&lt;Axes: xlabel=&#39;Date&#39;, ylabel=&#39;Infections&#39;&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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rXMYY/TII4/o8ssvV58+fSRJmZmZkqSoqKgK+0ZFRbneO9exY8f09NNP695776303h//+EcFBwerTZs2OnDggD777LMaa8rMzKzya59d29kyMjK0dOlSTZ48ucbj1sd7772n0NBQTZgwwfJjNxbWtLJXX31VvXr1UocOHeTn56cxY8bojTfe0OWXX27J8Rsba1rRhRdeqE6dOmnatGk6ceKECgoK9OyzzyozM1MZGRkNPn5Tac7ratW5uxvWtOK5ewvWteZ1zcvL0xNPPKFbb71VYWFhdTq+XVjTqtd08eLFCgkJUUBAgF5++WUtX75ckZGRtT42QescDzzwgFJSUvSf//yn0nsOh6PCx8aYStskKTs7W4mJierVq5eeeuqpSu8/9thj2rJli5YtWyYfHx/dfvvtrhv7evfurZCQEIWEhOiaa66p8WtXtV2S3n33XbVq1UrXXXeda9uXX37pOm5ISIjef//9Gr4L1XvnnXc0ceLECn85d3esaWWvvvqqvvnmGy1atEibNm3SSy+9pClTpmjFihW1PoadWNOKfH19NX/+fO3evVsREREKCgrS6tWrdc0118jHx6dWx3AHzXldrTh3d8SaVn3uno51rX5dCwsLdcstt6ikpERvvPFGlfu4I9a06nMfPny4tm7dqvXr12vMmDG66aablJWVVWm/6lR9Ta+ZevDBB7Vo0SKtXbtWHTp0cG2Pjo6WVJqeY2JiXNuzsrIqJe2cnByNGTNGISEhWrhwYZWXRCMjIxUZGanu3burZ8+eiouL0zfffKPBgwdryZIlKiwslCQFBga6vv65yb18kc/9+sYYvfPOO7rtttvk5+fn2j5w4MAKk43O/bza+PLLL7Vr1y599NFHdf5cu7CmleXm5upPf/qTFi5cqMTERElS3759tXXrVr344osaOXJkrY5jF9a0agMGDNDWrVvldDpVUFCgtm3batCgQRo4cGCtj2Gn5ryuVpy7O2JNK5+7N2Bdq1/XwsJC3XTTTUpLS9OqVas85moWa1r9mgYHB6tbt27q1q2bLr30UsXHx+uf//ynpk2bVmnfKtX6bi4vVlJSYu6//34TGxtrdu/eXeX70dHR5rnnnnNty8/Pr3QzoNPpNJdeeqkZOnSoOX36dK2+9oEDB4wkk5ycXO0+b7zxhmnVqpXJz893bXv22WervBkwOTnZSDKpqam1+vpn03mGYdxxxx1uP0GnHGtaqqo1Lb+Zc8mSJRW233PPPebqq6+u89doKqxpqfP9/7Tc7t27TYsWLcwXX3xR56/RlJrzulp17u6GNa3+3M/macMwWNea17WgoMBcd911pnfv3nWaSmcn1rR2/189W9euXc870fBsBC1jzO9+9zsTHh5uVq9eXWFE5JkzZ1z7PPvssyY8PNwsWLDApKamml//+tcVxltmZ2ebQYMGmYSEBLNnz54KxykqKjLGGLNhwwbz2muvmS1btph9+/aZVatWmcsvv9x07dq1wkSVc508edJERUWZX//61yY1NdUsWLDAhIWFVRhvWe43v/mNGTRoUK3PPScnx2zZssVs2bLFSDKzZ882W7ZsqTQlx+l0mqCgIPPmm2/W+th2Yk1rXtOhQ4ea3r17m+TkZPPjjz+auXPnmoCAAPPGG2/U+us0Nda05jX9+OOPTXJystm7d6/59NNPTadOncyECRNq/TXs0pzX1Ypzd0esac3nfuzYMbNlyxaTlJRkJJkPP/zQbNmyxWRkZNT669iBda3+3AsLC8348eNNhw4dzNatWyvsc3ZIcDesafXnfurUKTNt2jTXSPpNmzaZu+66y/j7+1eY8Hs+BC1T+hfiql5z58517VNSUmKeeuopEx0dbfz9/c2VV15ZITWXJ+mqXmlpacYYY1JSUszw4cNNRESE8ff3N507dzb33Xef+emnn85bY0pKirniiiuMv7+/iY6ONtOnT6+U5k+ePGkCAwPNnDlzan3u1dV9xx13VNjv73//uwkMDDQnT56s9bHtxJrWvKYZGRlm0qRJJjY21gQEBJgePXqYl156qdpxqe6ANa15Tf/2t7+ZDh06GF9fX9OxY0fz5z//2a1/wZdrzutqxbm7I9a05nOfO3dulfvU5a/kdmBdqz/38quTVb1qumJjN9a0+nPPzc01119/vYmNjTV+fn4mJibGjB8/3nz77be1/hrGGOMo+2IAAAAAAIswdRAAAAAALEbQAgAAAACLEbQAAAAAwGIELQAAAACwGEELAAAAACxG0AIAAAAAixG0AAAAAMBiBC0AAAAAsBhBCwDgtSZNmiSHwyGHwyFfX19FRUXp6quv1jvvvKOSkpJaH+fdd99Vq1atGq9QAIDXIWgBALzamDFjlJGRoX379mnp0qUaPny4fv/732vcuHEqKiqyuzwAgJciaAEAvJq/v7+io6PVvn179e/fX3/605/02WefaenSpXr33XclSbNnz1ZCQoKCg4MVFxenKVOm6NSpU5Kk1atX67e//a2cTqfr6tj06dMlSQUFBXr88cfVvn17BQcHa9CgQVq9erU9JwoAcCsELQBAs3PVVVfpoosu0oIFCyRJLVq00Kuvvqpt27bpvffe06pVq/T4449LkoYMGaJXXnlFYWFhysjIUEZGhh599FFJ0m9/+1t99dVX+vDDD5WSkqIbb7xRY8aM0Q8//GDbuQEA3IPDGGPsLgIAgMYwadIknTx5Up9++mml92655RalpKRox44dld775JNP9Lvf/U5Hjx6VVHqP1kMPPaSTJ0+69tm7d6/i4+P1008/KTY21rV95MiR+sUvfqGZM2dafj4AAM/R0u4CAACwgzFGDodDkpScnKyZM2dqx44dys7OVlFRkfLy8nT69GkFBwdX+fmbN2+WMUbdu3evsD0/P19t2rRp9PoBAO6NoAUAaJa+//57denSRfv379fYsWN133336emnn1ZERITWrVunu+66S4WFhdV+fklJiXx8fLRp0yb5+PhUeC8kJKSxywcAuDmCFgCg2Vm1apVSU1P18MMP67vvvlNRUZFeeukltWhReuvyxx9/XGF/Pz8/FRcXV9jWr18/FRcXKysrS1dccUWT1Q4A8AwELQCAV8vPz1dmZqaKi4t1+PBhff7555o1a5bGjRun22+/XampqSoqKtJrr72ma6+9Vl999ZXeeuutCsfo3LmzTp06pZUrV+qiiy5SUFCQunfvrokTJ+r222/XSy+9pH79+uno0aNatWqVEhISNHbsWJvOGADgDpg6CADwap9//rliYmLUuXNnjRkzRsnJyXr11Vf12WefycfHRxdffLFmz56t5557Tn369NH777+vWbNmVTjGkCFDdN999+nmm29W27Zt9fzzz0uS5s6dq9tvv11/+MMf1KNHD40fP14bNmxQXFycHacKAHAjTB0EAAAAAItxRQsAAAAALEbQAgAAAACLEbQAAAAAwGIELQAAAACwGEELAAAAACxG0AIAAAAAixG0AAAAAMBiBC0AAAAAsBhBCwAAAAAsRtACAAAAAIsRtAAAAADAYgQtAAAAALDY/wcxsfW6GQU7nwAAAABJRU5ErkJggg=="
+class="
+"
+>
 </div>
 
 </div>
@@ -16822,7 +20205,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Same-for-infections.">Same for infections.<a class="anchor-link" href="#Same-for-infections.">&#182;</a></h2>
+<h2 id="The-number-of-infections-is-increasing-over-time,-albeit-very-slowly.">The number of infections is increasing over time, albeit very slowly.<a class="anchor-link" href="#The-number-of-infections-is-increasing-over-time,-albeit-very-slowly.">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16833,7 +20216,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Conclusion:-On-paper,-both-deaths-and-population-are-stable.-In-reality:-We-have-no-good-information-on-the-change-over-this-week-because-the-data-is-not-being-updated">Conclusion: On paper, both deaths and population are stable. In reality: We have no good information on the change over this week because the data is not being updated<a class="anchor-link" href="#Conclusion:-On-paper,-both-deaths-and-population-are-stable.-In-reality:-We-have-no-good-information-on-the-change-over-this-week-because-the-data-is-not-being-updated">&#182;</a></h1>
+<h1 id="Conclusion:-On-paper,-deaths-are-stable-and-deaths-are-siligtly-increasing.-There-may-be-issues-regarding-when-the-data-are-updated,-however,-as-North-Decoda's-data-only-changed-from-one-day-to-another-once-within-the-entire-week-that-we-looked-at.">Conclusion: On paper, deaths are stable and deaths are siligtly increasing. There may be issues regarding when the data are updated, however, as North Decoda's data only changed from one day to another once within the entire week that we looked at.<a class="anchor-link" href="#Conclusion:-On-paper,-deaths-are-stable-and-deaths-are-siligtly-increasing.-There-may-be-issues-regarding-when-the-data-are-updated,-however,-as-North-Decoda's-data-only-changed-from-one-day-to-another-once-within-the-entire-week-that-we-looked-at.">&#182;</a></h1>
 </div>
 </div>
 </div>
